@@ -1,6 +1,6 @@
 _cvLoader = {
-    name: "https://thecoolblackcat.github.io/coronavirus-banner/cv-banner.js",
-    // name: "cv-banner.js",
+    // name: "https://thecoolblackcat.github.io/coronavirus-banner/cv-banner.js",
+    name: "cv-banner.js",
     load: function (lang) {
         var body = document.getElementsByTagName("body")[0],
             script = document.createElement("script");
@@ -12,4 +12,4 @@ _cvLoader = {
     }
 }
 
-_cvLoader.load("en");
+_cvLoader.load("zh");

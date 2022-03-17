@@ -9,6 +9,11 @@ _cv = {
             title:"There is an ongoing outbreak of COVID-19",
             url: "https://www.cdc.gov/coronavirus/2019-ncov/index.html",
             description: "Learn more about how you can protect yourself and others"
+        },
+        "zh-CN": {
+            title:"COVID-19疫情已经开始",
+            url: "https://www.chinacdc.cn/jkzt/crb/zl/szkb_11803/",
+            description: "了解如何保护自己和他人"
         }
     },
 
@@ -59,7 +64,6 @@ _cv = {
             h1 = document.createElement("h1"),
             p = document.createElement("p"),
             a = document.createElement("a"),
-            credits = document.createElement("p"),
             close = document.createElement("i");
 
         h1.innerText = i.title;
@@ -70,12 +74,8 @@ _cv = {
         close.innerText = "x";
         close.addEventListener("click", this.hide.bind(this));
 
-        credits.innerHTML = 'Made by Tim • <a href="https://github.com/TheCoolBlackCat/coronavirus-banner">Want this on your site?</a>';
-        credits.classList.add("credits");
-
         div.appendChild(h1);
         div.appendChild(p);
-        div.appendChild(credits);
         div.appendChild(close);
         div.id = this.id;
 
@@ -92,9 +92,6 @@ _cv = {
             #cv-banner a {color: firebrick;} \
             #cv-banner i {font-style: bold !important; position: fixed; top:.5rem; right:.5rem; cursor:pointer;} \
             #cv-banner i:hover {color: firebrick;} \
-            #cv-banner p.credits {font-size:small; margin:0; color:grey;} \
-            #cv-banner p.credits a {color:grey; text-decoration:none;} \
-            #cv-banner p.credits a:hover {color:firebrick;} \
         ";
         this.body.appendChild(s);
     },
